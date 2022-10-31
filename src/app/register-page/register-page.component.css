@@ -1,0 +1,60 @@
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #1ba3ed;
+    color: white;
+  }
+
+
+  .header {
+    padding: 05; /* some padding */
+    text-align: center; /* center the text */
+    background: #499bfe; /* green background */
+    color: white; /* white text color */
+  }
+  
+  /* Increase the font size of the <h1> element */
+  .header h1 {
+    font-size: 36px;
+  }
+  .header h6 {
+    margin: 24.9;
+  }
+
+  .label {
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+.Container{
+margin-right:0px;
+justify-content: center;
+/*so the last one dont push the div thas giving the space only between the inputs*/
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}

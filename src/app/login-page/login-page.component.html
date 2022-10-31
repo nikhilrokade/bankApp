@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+</style>
+</head>
+<body>  
+
+    <div class="topnav">
+        <nav>
+          <a class="active" href="http://localhost:4200/">Home</a>
+          <a href="">Savings Account</a>
+          <a href="/">About</a>
+        </nav>
+        
+        <div style="float:right;">
+          <button>Help</button>
+        </div>
+      </div><br>
+    
+    <div class="container">
+        <img src="../assets/Loginpage.webp" alt="Snow" style="width:100%;">  
+        <div class="centered">
+            <h5>Login Page</h5>
+            <form class="example-form">
+                <input Input placeholder="Enter your name" name="usename"[(ngModel)] ="username"><br><br>
+                <input Input placeholder="Enter your password" value="" name="password" type="password" [(ngModel)]= "password"><br><br>
+                <button mat-raised-button color="primary" class="btn btn-warning">Submit</button>
+                <span *ngIf="show">
+                    <button mat-button color="accent">Login success !!</button></span>
+            </form>
+        </div>
+    </div><br><br>
+
+</body>
+</html> 
+

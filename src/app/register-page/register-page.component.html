@@ -1,0 +1,64 @@
+<!-- <p>register-page works!</p> -->
+
+<div class="topnav">
+  <nav>
+    <a class="active" href="http://localhost:4200/">Home</a>
+    <a href="/">About</a>
+  </nav>
+  
+  <div style="float:right;">
+    <button>Help</button>
+  </div>
+</div><br>
+
+<div style="float:center;">
+  <div>
+    <form (ngSubmit)="onSubmit()" (ngCancle)="cancel()">
+
+      <div class="form-group row">
+        <label for="aadhaarCardNumber">Aadhaar Card Number:</label>
+        <input type="text" class="form-control" id="aadhaarCardNumber" required [(ngModel)]="aadhaarCardNumber" name="aadhaarCardNumber">
+      </div><br>
+
+    <div class="form-group">
+      <label for="mobileNumber">Mobile Number:</label>
+      <input type="text" class="form-control" id="mobileNumber" required [(ngModel)]="mobileNumber" name="mobileNumber">
+    </div><br>
+
+    <div class="form-group">
+      <label for="emailId">E-mail Address:</label>
+      <input type="text" class="form-control" id="emailId" required [(ngModel)]="emailId" name="emailId">
+    </div><br>
+    
+    <div class="form-group">
+        <label for="userName">Enter Full Name:</label>
+        <input type="text" class="form-control" id="userName" required [(ngModel)]="userName" name="userName">
+    </div><br>
+    
+    <div class="form-group">
+        <label for="panCardNo">Pan Card Number:</label>
+        <input type="text" class="form-control" id="panCardNo" required [(ngModel)]="panCardNo" name="panCardNo">
+    </div><br>
+
+    <div class="form-group">
+      <label for="passWord">Enter Password</label>
+      <input type="text" class="form-control" id="passWord" required [(ngModel)]="passWord" name="passWord">
+  </div><br>
+
+  <div class="form-group">
+    <label for="confirmPassWord">Confirm Password</label>
+    <input type="text" class="form-control" id="confirmPassWord" required [(ngModel)]="confirmPassWord" name="panCardNo">
+</div><br>
+ 
+    <div class= "flex-container" style="float:center;"  id="btnsubmit" >
+      <button type="submit" class="btn btn-primary" (click)="addCustomer()">Submit</button>
+      <button type="submit" class="btn btn-danger" (click)="cancel()">Cancel</button>
+    </div>
+
+  </form>
+</div>
+</div><br>
+
+<div [hidden]="!submitted">
+  <h4 style="text-align:center;">Successfully Created!</h4>
+</div><br>

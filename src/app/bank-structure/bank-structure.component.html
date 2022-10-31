@@ -1,19 +1,32 @@
 <body>
+
+  <div style="text-align:center;">
+  
+    <h6 style="font-size:1rem; color: #eb08f3">Welcome to our Website!</h6>
+  </div>
+
+  <div *ngIf = "flag">
+    <div *ngIf="linkage">
+
+
     <div>
        <div class="header"> 
         <h1 style="text-align:center;">Bank Application</h1>
        </div> 
-       <h6 style="text-align:center;">Welcome to our Website</h6>
-
-
+       
+       
     <!-- <Need to make a page for Login and Sign up with Backend logic> -->
       <div class="topnav">
-        <a class="active" href="home">Home</a>
-        <a href="news">News</a>
-        <a href="contact">Contact</a>
-        <a href="about">About</a>
-        <a href="">Login</a> &nbsp;
-        <a href="">Signup/Register</a>
+       <nav>
+        <a class="nav-link active" href="/" style="text-decoration: none;" href="home">Home</a>
+        <a href="news">Accounts</a>
+        <a class="nav-link" routerLinkActive="active" (click)="loginclick()">Login</a>
+        <a class="nav-link" routerLinkActive="active"  (click)="callSignUp()">Signup/Register</a>
+        <a href="/register">News</a>
+        <!-- <a href="">Signup/Register</a> -->
+       </nav>
+
+
          <!-- <Need to add buttons logic on the page > -->
           <div style="float:right;" >
             <button style="text-align: right;">Career</button>
@@ -22,9 +35,11 @@
         </div>
       </div>
 
+
     <!-- <left side grey color row for the screen starts from here> -->
     <div class="row">
         <div class="side">
+
 
     <!-- In short Banking Experience and Photo  -->
         <div>
@@ -35,6 +50,7 @@
           <p></p>
         </div>
         
+
     <!-- Loan Details and Photo I should Post Hyperlink for next page may be -->
           <div>
             <h2>Loan Schemes</h2>
@@ -43,13 +59,15 @@
             <img src="../assets/businessman-giving-money-indian-rupee-currency-hs-partner_8087-3443.webp" alt="error loading Image" width="300" height="200">
           </div>
 
+
     <!-- <Insurance and Policies may add a link in future> -->
           <div>
             <h2>Insurance Plans</h2>
-            <h5>General Insurance,Health Insurance,Motor Insurance</h5>
+            <h5>General,Health,Motor and so many Insurance</h5>
             <img src="../assets/insurance-policy.jpg" alt="error loading Image" width="300" height="200">
             <p></p>
           </div>
+
 
     <!-- <Need to tell more about the funds on the page > -->
           <div>
@@ -59,8 +77,10 @@
           </div>
         </div>
 
+
     <!-- <Middle Layer useage for the Bank Application> -->
           <div class="main">
+
 
     <!-- <For the Main Headlines of the week in Bank Application > -->
           <h2>Stay Away from Online Fraud</h2>
@@ -72,16 +92,68 @@
 
 
           <h2>Achievements</h2>
-          <h5>hi</h5>
-
-          <div class="fakeimg" style="height:200px;">Add Image</div>
+          <h5>We are Expanding with Great Power</h5>
+          <img src="../assets/307539909_2406942489463287_3711163929860317660_n.jpg" alt="error loading Image" width="700" height="400">
           <p>Bank Details</p>
           <p>Upcoming Updates</p>
          </div>
       </div>
      
+
   <!-- <End for the bank page> -->
       <div class="footer">
         <h2>Thank You!</h2>
-      </div>      
+      </div>
+    </div>   
+  </div>  
 </body>    
+
+<router-outlet></router-outlet>
+
+
+
+
+
+
+
+    <!-- <nav>
+             <a class="nav-link active" href="/" style="text-decoration: none;">Home</a><p></p>
+             <a class="nav-link" href="/operation" style="text-decoration: none;">Get</a>
+             <a class="nav-link" href="/registration" style="text-decoration: none;">Registration</a>
+             <a class="nav-link" href="/remove" style="text-decoration: none;">Delete</a>
+    </nav> -->
+
+
+
+
+<!-- 
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+ 
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a routerLink="employees" class="nav-link" routerLinkActive="active">Employee List</a>
+        </li>
+        
+        <li class="nav-item">
+            <a routerLink="add-emp" class="nav-link" routerLinkActive="active">Add Employee</a>
+        </li>
+      </ul>
+    </nav> -->
+
+
+    <!-- <h2 style="text-align: center;">{{title}}</h2> -->
+
+
+    <!-- <div class="container">
+      <br>
+      <hr>  
+      <div class="card">
+        <div class="card-body">
+        </div>
+      </div>
+    </div> -->
+
+
+
+
+    
